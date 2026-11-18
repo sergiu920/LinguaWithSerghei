@@ -1,5 +1,6 @@
 import { CircleUserRound } from 'lucide-react'
 import { Link, Outlet } from 'react-router'
+import Logo from '../components/Logo'
 
 function MainLayout() {
   return (
@@ -8,15 +9,10 @@ function MainLayout() {
         <div className="flex h-16 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link
             to="/"
-            className="flex items-center gap-2 text-gray-950"
+            className="rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-600"
             aria-label="LinguaWithSerghei home"
           >
-            <img
-              src="/favicon.svg"
-              alt=""
-              className="h-8 w-8"
-            />
-            <span className="text-lg font-semibold">LinguaWithSerghei</span>
+            <Logo />
           </Link>
 
           <button
